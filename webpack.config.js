@@ -17,7 +17,7 @@ const entry = glob.sync('src/o-*/')
     return col;
   }, {});
 
-module.exports = {
+const config = {
   entry,
   output: {
     filename: '[name]/index.js'
@@ -39,9 +39,29 @@ module.exports = {
         use: [
           { loader: 'style-loader' },
           { loader: 'css-loader' },
-          { loader: 'sass-loader' },
+          {
+            loader: 'sass-loader',
+            options: {
+              includePaths: ['bower_components']
+            }
+          },
         ]
       }
     ]
   }
 };
+
+const monoConfig = {
+  entry: join(__dirname, 'index.js'),
+  output: {
+    path: join(__dirname, 'dist'),
+    filename: 'o-react.js',
+  },
+};
+
+monoConfig.module = config.module;
+
+module.exports = [
+  config,
+  monoConfig, // For some reason I'm getting the following error: Conflict: Multiple assets emit to the same filename o-react.js
+];

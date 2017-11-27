@@ -2,16 +2,16 @@
   "name": "o-react",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/o-react.js",
   "eslint": {
     "extends": "airbnb"
   },
   "scripts": {
     "build": "webpack",
-    "build": "for sass in */*.scss; do node-sass --include-path bower_components/ $sass ${sass%.*}.css; done"
+    "prepare": "bower install"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ændrew Rininsland (https://www.twitter.com/aendrew)",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.32",
