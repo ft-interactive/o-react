@@ -1,0 +1,34 @@
+{
+  "name": "o-react-components",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Ændrew Rininsland <andrew.rininsland@ft.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "o-colors": "^4.1.4",
+    "o-fonts": "^3.0.3",
+    "o-grid": "^4.3.5",
+    "o-typography": "^5.4.0",
+    "o-visual-effects": "^2.0.2",
+    "o-aside-panel": "^3.0.2",
+    "o-buttons": "^5.8.1",
+    "o-card": "^3.0.1",
+    "o-footer": "^6.0.6",
+    "o-header": "^7.2.5",
+    "o-overlay": "^2.1.4",
+    "o-tabs": "^4.0.3",
+    "o-tooltip": "^2.3.6",
+    "o-icons": "^5.4.2"
+  }
+}
